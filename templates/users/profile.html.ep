@@ -1,0 +1,10 @@
+% layout 'default';
+% title 'User profile';
+<h2>User profile</h2>
+<p>
+  Email: <%= $email %>
+  <br/>
+  Name: <%= $name %>
+</p>
+
+<%= link_to 'Logout' => 'logout' %>

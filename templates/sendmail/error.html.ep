@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Done';
+<h2>Something goes wrong</h2>
+<p>
+  Check your input.
+</p>

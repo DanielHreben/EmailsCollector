@@ -1,0 +1,21 @@
+% layout 'default';
+% title 'Login';
+<h2>Hello! You are not logged in</h2>
+<p>
+  Choose any of authentication method from this list:
+  <ul>
+    <li><%= link_to 'Google' => '/auth/google/authenticate' %></li>
+    <li><%= link_to 'Github' => '/auth/github/authenticate' %></li>
+    <li><%= link_to 'Facebook' => '/auth/facebook/authenticate' %></li>
+    <li>
+      Email address
+      <form name="registration" method="post" action="/auth/sendmail/authenticate">
+        Name: <input name="name" type="text" required/> 
+        <br/>
+        Email: <input name="email" type="email" required/>
+        <br>
+        <input type="submit">
+      </form>
+    </li>
+  </ul>
+</p>

@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Done';
+<h2>Email was sent</h2>
+<p>
+  Check your mailbox for confirmation link.
+</p>
