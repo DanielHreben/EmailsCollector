@@ -58,7 +58,7 @@ sub _send_email {
   my $config = $self->app->plugin('Config');
 
   my $jwt = $self->_jwt->claims({name => $name, email => $email})->encode;
-  my $url = $self->url_for($config->{base_url} . '/auth/sendmail/callback')->to_abs->query(jwt => $jwt);
+  my $url = $self->url_for('/auth/sendmail/callback')->to_abs->query(jwt => $jwt);
 
   my $message = Email::Simple->create(
     header => [
